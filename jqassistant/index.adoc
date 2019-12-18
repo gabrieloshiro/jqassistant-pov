@@ -1,0 +1,10 @@
+@startuml
+
+skinparam componentStyle uml2
+
+class "{name:"AbstractEntity"}" as abstractEntity <<Type>>
+class "entity" as entity <<Class>> <<(+) Entity>>
+
+entity -up-|> abstractEntity  : :EXTENDS*
+
+@enduml
